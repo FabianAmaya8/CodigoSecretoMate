@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Código Secreto: Misión Binaria</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🕵️ Código Secreto: Misión Binaria 🕵️</h1>
+        
+        <div id="story-intro" class="section">
+            <h2>Misión: Descifrar el Código Secreto</h2>
+            <p>Bienvenido, agente. Tu misión es descifrar una palabra secreta resuelviendo acertijos matemáticos que se convertirán en código binario.</p>
+        </div>
+
+        <div id="game-area" class="section">
+            <div id="challenge-container">
+                <h3 id="challenge-title">Acertijo Matemático</h3>
+                <p id="challenge-description">Resuelve esta operación matemática:</p>
+                <div id="math-challenge">
+                    <span id="math-problem"></span>
+                    <input type="number" id="user-answer" placeholder="Tu respuesta">
+                    <button onclick="checkAnswer()">Verificar</button>
+                </div>
+            </div>
+
+            <div id="binary-conversion" class="hidden">
+                <h3>Conversión Binaria</h3>
+                <p>Convierte el número decimal a binario:</p>
+                <div id="binary-problem">
+                    <p>Número decimal: <span id="decimal-number"></span></p>
+                    <input type="text" id="binary-answer" placeholder="Código binario (5 bits)">
+                    <button onclick="checkBinaryAnswer()">Validar Binario</button>
+                </div>
+            </div>
+
+            <div id="letter-result" class="hidden">
+                <h3>Letra Descifrada</h3>
+                <p id="decoded-letter"></p>
+            </div>
+        </div>
+
+        <div id="progress-section" class="section">
+            <h3>Progreso del Código Secreto</h3>
+            <div id="secret-word-progress"></div>
+        </div>
+
+        <div id="secret-code-input" class="section hidden">
+            <h3>Ingresa el Código Secreto</h3>
+            <div id="code-input-container">
+                <input type="text" id="secret-code-input-field" placeholder="Escribe la palabra secreta">
+                <button onclick="checkSecretCode()">Verificar Código Secreto</button>
+            </div>
+            <p id="code-verification-result"></p>
+        </div>
+
+        <div id="final-result" class="hidden">
+            <h2>¡Misión Cumplida! 🎉</h2>
+            <p id="final-secret-word"></p>
+            <button onclick="initializeGame()">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="JS/index.js"></script>
+</body>
+</html>

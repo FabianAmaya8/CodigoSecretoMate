@@ -1,0 +1,89 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #0f3460;
+    background-color: #e94560;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.section {
+    background-color: #0f3460;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c72345;
+}
+
+.hidden {
+    display: none;
+}
+
+#secret-word-progress {
+    font-size: 24px;
+    letter-spacing: 10px;
+}
+
+#final-result {
+    background-color: #0f3460;
+    color: #e94560;
+    padding: 20px;
+    font-size: 24px;
+}
+/* [Mantenemos los estilos anteriores y añadimos] */
+#code-input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.secret-code-letter-input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 2px solid #e94560;
+    background-color: #0f3460;
+    color: #e0e0e0;
+}
+
+#code-verification-result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
